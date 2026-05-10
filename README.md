@@ -63,6 +63,7 @@ This teaches:
 - all coordination is explicit
 
 ---
+<img width="564" height="437" alt="Broadcast" src="https://github.com/user-attachments/assets/d901bdea-71a1-4164-a36a-4f358e5be194" />
 
 ### 2. `broadcast` (1 → N synchronization)
 
