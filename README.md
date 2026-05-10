@@ -1,23 +1,6 @@
 # Distributed Training Fundamentals (PyTorch DDP Deep Dive)
-graph TD
-    A[Dataset] --> B[DistributedSampler]
-    
-    B --> C1[GPU 0]
-    B --> C2[GPU 1]
-    
-    C1 --> D1[Forward Pass]
-    C2 --> D2[Forward Pass]
-    
-    D1 --> E1[Backward Pass]
-    D2 --> E2[Backward Pass]
-    
-    E1 --> F[All-Reduce Gradient Sync]
-    E2 --> F
-    
-    F --> G[Identical Model Update]
-    
-    G --> C1
-    G --> C2
+<img width="542" height="804" alt="Distributed" src="https://github.com/user-attachments/assets/49411f1a-c6b5-4112-8aaa-620066927d0e" />
+
 
 
 ## Overview
