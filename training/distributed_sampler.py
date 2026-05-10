@@ -1,4 +1,3 @@
-
 """
 distributed_sampler.py
 
@@ -35,3 +34,21 @@ def create_dataloader(rank, world_size):
         train=True,
         download=True,
         transform=transform
+    )
+
+    sampler = DistributedSampler(
+        dataset,
+        num_replicas=world_size,
+        rank=rank,
+        shuffle=True
+    )
+
+    dataloader = DataLoader(
+        dataset,
+        batch_size=32,
+        sampler=sampler,
+        num_workers=2,
+        pin_memory=True
+    )
+
+    return dataloader
