@@ -1,3 +1,4 @@
+<img width="564" height="479" alt="Allreduce" src="https://github.com/user-attachments/assets/800cfe52-3279-4421-9128-5029b877c2f7" />
 # Distributed Training Fundamentals (PyTorch DDP Deep Dive)
 <img width="542" height="804" alt="Distributed" src="https://github.com/user-attachments/assets/49411f1a-c6b5-4112-8aaa-620066927d0e" />
 
@@ -78,6 +79,7 @@ This teaches:
 > ensure all workers start from identical state
 
 ---
+<img width="564" height="479" alt="Allreduce" src="https://github.com/user-attachments/assets/c37e9e02-4a94-4e4a-98b2-db94f807406d" />
 
 ### 3. `all_reduce` (N → N gradient synchronization)
 
@@ -96,6 +98,7 @@ This is the core operation behind DDP.
 ---
 
 ## Data Parallelism (`DistributedSampler`)
+<img width="564" height="531" alt="Dataparallelism" src="https://github.com/user-attachments/assets/9a05d50e-c931-4a26-a56d-953241ef0ed7" />
 
 Each GPU must see different data.
 
